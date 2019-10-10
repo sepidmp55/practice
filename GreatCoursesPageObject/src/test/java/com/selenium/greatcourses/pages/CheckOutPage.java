@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import com.selenium.libraries.Base;
+import src.test.java.com.selenium.libraries.Base;
 
 public class CheckOutPage extends Base{
 
-	public CheckOutPage(){
+	public CheckOutPage(){//this is for git 
 		String cssLocator = "#shopping-cart-table > tbody > tr.first.odd > td.col-format > div.b-core-ui-select > span.b-core-ui-select__value";
 		WebElement instanceVideoDropDown = myLibrary.waitUntilElementPresence(By.cssSelector(cssLocator));
 		Assert.assertNotNull(instanceVideoDropDown, "Instant Video Drop-Down element is not visible.");
